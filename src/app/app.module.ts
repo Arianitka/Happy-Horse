@@ -15,6 +15,7 @@ import { UserModule } from './user/user.module';
 import { SharedComponent } from './shared/shared.component';
 import { GalleryHeaderComponent } from './gallery/gallery-header/gallery-header.component';
 import { GalleryModule } from './gallery/gallery.module';
+import { ThemeModule } from './theme/theme.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { GalleryModule } from './gallery/gallery.module';
     // SharedModule,
     HttpClientModule,
     UserModule,
-    GalleryModule
+    GalleryModule,
+    ThemeModule
   ],
   providers: [
     provideClientHydration()
