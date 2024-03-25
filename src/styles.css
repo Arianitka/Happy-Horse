@@ -1,1 +1,35 @@
+@import url('../styles/css/demo.css');
+@import url('../styles/css/grid_12.css');
+@import url('../styles/css/ie.css');
+@import url('../styles/css/reset.css');
+@import url('../styles/css/slider.css');
+@import url('../styles/css/style.css');
+
 /* You can add global styles to this file, and also import other style files */
+html, body {
+	width:100%;
+	padding:0;
+	margin:0;
+}
+body {
+	font: 14px/24px Tahoma, Geneva, sans-serif;
+	color:#636f6f;
+	min-width:1264px;
+	background: #000;
+}
+.ic {
+	border:0;
+	float:right;
+	background:#fff;
+	color:#f00;
+	width:50%;
+	line-height:10px;
+	font-size:10px;
+	margin:-220% 0 0 0;
+	overflow:hidden;
+	padding:0
+}
+.main {
+	width:940px;
+	margin:0 auto;
+}

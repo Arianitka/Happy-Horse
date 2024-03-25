@@ -9,21 +9,24 @@ import { CurrentThemeComponent } from './theme/current-theme/current-theme.compo
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
-import { CoreModule } from './app/core/core.module';
+import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserModule } from './user/user.module';
 import { SharedComponent } from './shared/shared.component';
+import { GalleryHeaderComponent } from './gallery/gallery-header/gallery-header.component';
+import { GalleryModule } from './gallery/gallery.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    
     AddThemeComponent,
-    CurrentThemeComponent,
-    HeaderComponent,
-    FooterComponent,
-    MainComponent,
-    SharedComponent
+    CurrentThemeComponent
+   
+    // HeaderComponent,
+    // FooterComponent,
+    // MainComponent,
+    // SharedComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { SharedComponent } from './shared/shared.component';
     // SharedModule,
     HttpClientModule,
     UserModule,
+    GalleryModule
   ],
   providers: [
     provideClientHydration()

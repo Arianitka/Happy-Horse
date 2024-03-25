@@ -1,0 +1,78 @@
+a {
+	text-decoration:none;
+	cursor:pointer;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+.button {
+	background:pink;
+	color:#fff;
+	font-size:18px;
+	line-height:24px;
+	padding:4px 12px 10px 12px;
+	display:inline-block;
+	border-radius: 20px;
+}
+.button:hover {
+	background:#636f6f;
+}
+.link {
+	color:#ef6f53;
+	text-decoration:none;
+}
+.link:hover {
+	text-decoration:underline;
+}
+.clr-1 {
+	color:#fff;
+}
+.text-1 {
+	color:#fff;
+	font-size:18px;
+	line-height:24px;
+}
+h2 {
+	font-size:26px;
+	line-height:32px;
+	color:#fff;
+	font-weight:normal;
+}
+h3 {
+	font-size:18px;
+	line-height:24px;
+	color:#fff;
+	font-weight:normal;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style-image:none;
+}
+ul.list-1 li {
+	padding:0px 0 0px 12px;
+	line-height:24px;
+	background:url(../../assets/images/marker-1.gif) 0 9px no-repeat;
+}
+ul.list-1 li a {
+	font-size:14px;
+	color:#636f6f;
+	line-height:24px;
+}
+ul.list-1 li a:hover {
+	color:#ef6f53;
+}
+ul.list-2 li {
+	padding:0px 0 6px 15px;
+	line-height:24px;
+	background:url(../../assets/images/marker-3.gif) 0 9px no-repeat;
+}
+ul.list-2 li a {
+	font-size:14px;
+	color:#fff;
+	line-height:24px;
+}
+ul.list-2 li a:hover {
+	color:#ef6f53;
+}
