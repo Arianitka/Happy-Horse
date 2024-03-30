@@ -15,5 +15,13 @@
     <li><a routerLink="/gallery.html">Gallery</a></li>
     <li><a href="contacts.html">Contacts</a></li>
   </ul>
+  <div *ngIf="isLoggedIn" class="mini-navbar">
+    <ul>
+        <li><a routerLink="/profile">{{ firstName }}'s Profile</a></li>
+        <li (click)="logout()">
+        <a>Logout</a>
+    </li>
+    </ul>
+  </div>
   <div class="clear"></div>
 </nav>
