@@ -42,16 +42,16 @@
 	position:relative;
 	display:block;
 }
-.img-pags li a img {
-}
+/* .img-pags li a img {
+} */
 .img-pags li a span {
 	display:block;
 	background:#fff;
 }
-.img-pags li.active a, .img-pags li a:hover {
+/* .img-pags li.active a, .img-pags li a:hover {
 }
 .img-pags li.active a img, .img-pags li a:hover img {
-}
+} */
 .prev {
 	position:absolute;
 	top:504px;

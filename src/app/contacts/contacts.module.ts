@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EventsComponent } from './events.component';
+import { ContactsComponent } from './contacts.component';
 import { RouterModule } from '@angular/router';
 import { HomeModule } from '../home/home.module';
 
 
 
 @NgModule({
-  declarations: [EventsComponent],
+  declarations: [ContactsComponent],
   imports: [
-    CommonModule, RouterModule, HomeModule
+    CommonModule,RouterModule,HomeModule
   ]
 })
-export class EventsModule { }
+export class ContactsModule { }

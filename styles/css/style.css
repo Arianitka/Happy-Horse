@@ -414,12 +414,12 @@ dl.adrss dd span {
 	margin-right:12px;
 	color:#fff;
 }
-dl.adrss dd {
+/* dl.adrss dd {
 }
 dl.adrss dd a {
 }
 dl.adrss dd a:hover {
-}
+} */
 .footer-col-4 {
 	float:left;
 	width:276px;
@@ -447,12 +447,12 @@ dl.adr dd span {
 	float:left;
 	color:#fff;
 }
-dl.adr dd {
+/* dl.adr dd {
 }
 dl.adr dd a {
 }
 dl.adr dd a:hover {
-}
+} */
 #form {
 	margin: 17px 0 0px 0px;
 	width:607px;

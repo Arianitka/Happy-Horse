@@ -23,12 +23,12 @@
 .pagination {
 	display:none;
 }
-.pagination li {
+/* .pagination li {
 }
 .pagination a {
 }
 .pagination li.current a, .pagination li:hover a {
-}
+} */
 .prev {
 	position:absolute;
 	top:504px;
@@ -92,7 +92,7 @@
 	line-height:32px;
 	padding:10px 22px 21px 30px;
 	display:inline-block;
-	float:right;
+	float: right;
 	margin-top:18px;
 	border-radius: 20px;
 }

@@ -53,7 +53,7 @@ ul {
 ul.list-1 li {
 	padding:0px 0 0px 12px;
 	line-height:24px;
-	background:url(../../assets/images/marker-1.gif) 0 9px no-repeat;
+	background:url(../../../assets/images/marker-1.gif) 0 9px no-repeat;
 }
 ul.list-1 li a {
 	font-size:14px;
@@ -66,7 +66,7 @@ ul.list-1 li a:hover {
 ul.list-2 li {
 	padding:0px 0 6px 15px;
 	line-height:24px;
-	background:url(../../assets/images/marker-3.gif) 0 9px no-repeat;
+	background:url(../../../assets/images/marker-3.gif) 0 9px no-repeat;
 }
 ul.list-2 li a {
 	font-size:14px;
