@@ -13,7 +13,7 @@ export class UserService {
   }
   constructor() {
     const lsUser = localStorage.getItem(this.USER_KEY)
-    this.user = JSON.parse(lsUser)
+    this.user = JSON.parse(lsUser!)
    }
 
   login() {
