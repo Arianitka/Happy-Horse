@@ -15,13 +15,15 @@ import { UserModule } from './user/user.module';
 import { GalleryHeaderComponent } from './gallery/gallery-header/gallery-header.component';
 import { GalleryModule } from './gallery/gallery.module';
 import { ThemeModule } from './theme/theme.module';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     
     AddThemeComponent,
-    CurrentThemeComponent
+    CurrentThemeComponent,
+    EventsComponent
    
     // HeaderComponent,
     // FooterComponent,
@@ -35,7 +37,8 @@ import { ThemeModule } from './theme/theme.module';
     HttpClientModule,
     UserModule,
     GalleryModule,
-    ThemeModule
+    ThemeModule,
+    
   ],
   providers: [
     provideClientHydration()
