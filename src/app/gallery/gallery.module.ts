@@ -5,8 +5,6 @@ import { RouterModule } from '@angular/router';
 
 import { HomeModule } from '../home/home.module';
 
-
-
 @NgModule({
   declarations: [
     GalleryComponent

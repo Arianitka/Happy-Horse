@@ -19,10 +19,6 @@ import { ContactsModule } from './contacts/contacts.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    
-    
-
     
   ],
   imports: [
