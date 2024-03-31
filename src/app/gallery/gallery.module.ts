@@ -12,7 +12,7 @@ import { HomeModule } from '../home/home.module';
     GalleryComponent
   ],
   imports: [
-    CommonModule, RouterModule, HomeModule
+    CommonModule, RouterModule, HomeModule,
   ]
 })
 export class GalleryModule { }
