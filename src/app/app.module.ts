@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 // import { CoreModule } from './core/core.module';
@@ -32,6 +34,8 @@ import { ContactsModule } from './contacts/contacts.module';
     HomeModule,
     BookingModule,
     ContactsModule,
+    CommonModule,
+    RouterModule
     
   ],
   providers: [
