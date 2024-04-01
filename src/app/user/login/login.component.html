@@ -3,7 +3,7 @@
     <!-- homepage -->
 
     <div class="container">
-        <form class="login" #form="ngForm" (ngSubmit)="login(form)">
+        <form class="login" ngForm="form" (ngSubmit)="login()">
             <fieldset>
                 <h2>Login Form</h2>
     
@@ -15,13 +15,13 @@
                         id="email"
                         placeholder="john.doe@gmail.com"
                         ngModel
-                        #inputEmail="ngModel" required email/>
+                        ngModel required email #inputEmail/>
                 </p>
-                <div *ngIf="inputEmail.touched && inputEmail.invalid">
+                <!-- <div *ngIf="inputEmail.touched && inputEmail.invalid">
                     <p class="error" *ngIf="inputEmail.errors?.required">Email is required!</p>
                     <p class="error" *ngIf="inputEmail.errors?.email">Email is not valid!</p>
                 </div>
-    
+     -->
                 <p class="field field-icon">
                     <label for="password"><span><i class="fas fa-lock"></i></span></label>
                     <input type="password"
@@ -29,12 +29,12 @@
                         id="password"
                         placeholder="******"
                         ngModel
-                        #inputPassword="ngModel" required minlength="4"/>
+                        ngModel required minlength="4" #inputPassword/>
                 </p>
-                <div *ngIf="inputPassword.touched && inputPassword.invalid">
+                <!-- <div *ngIf="inputPassword.touched && inputPassword.invalid">
                     <p class="error" *ngIf="inputPassword.errors?.required">Password is required!</p>
                     <p class="error" *ngIf="inputPassword.errors?.minlength">Password must be at least 4 characters!</p>
-                </div>
+                </div> -->
     
                 <button type="submit">Login</button>
             </fieldset>
