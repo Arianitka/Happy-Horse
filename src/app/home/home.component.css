@@ -1,4 +1,4 @@
-@import url('../../../styles/css/slider.css');
+ @import url('../../../styles/css/slider.css'); 
 
 .mainIMG {
     position:relative;
@@ -7,7 +7,6 @@
 	margin:0 auto;
 	padding:0px 0px 0 0px;
 	z-index:2;
-	background:#fff;
 	overflow:hidden;
 	margin:0 auto;
 }
@@ -55,4 +54,86 @@
 }
 .banner a:hover {
 	background:#636f6f;
+} 
+
+
+
+/* test */
+
+/* .home-container {
+	display: flex;
+	.all-horses {
+		width: 75%;
+		min-height: calc(100vh - 80px);
+		border-right: 1px solid gray;
+		padding: 20px 40px;
+		font-family: "Roboto", sans-serif;
+		.top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 15px;
+			h4 {
+				text-transform: uppercase;
+				font-weight: bold;
+				border-left: 5px solid gray;
+				padding-left: 10px;
+			}
+			.horses {
+				.horse {
+					margin-bottom: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					.name {
+						font-weight: bold;
+						cursor: pointer;
+					}
+				}
+				.view-all {
+					color: gray;
+					cursor: pointer;
+				}
+			}
+			
+		}
+		.horses-thumbnail {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 30px;
+			.horse {
+				.cover {
+					img {
+						border-radius: 5px;
+					}
+
+				}
+				.detal {
+					width: 180px;
+					.name {
+						font-weight: bold;
+						height: 50px;
+						margin-top: 50px;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.view-all {
+			color: pink;
+			text-align: right;
+			margin-top: 30px;
+			cursor: pointer;
+		}
+	}
+
+	.popular-horses {
+		width: 25%;
+		min-height: calc(100vh - 80px);
+		padding: 20px 40px;
+		font-family: "Roboto", sans-serif;
+	}
 }
+
+
+ */

@@ -5,6 +5,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { BookingComponent } from './booking/booking.component';
 import { EventsComponent } from './events/events.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { LoginComponent } from './user/login/login.component';
 
 const routes: Routes = [
   
@@ -14,6 +15,8 @@ const routes: Routes = [
   {path: 'booking', component: BookingComponent},
   {path: 'events', component: EventsComponent},
   {path: 'contacts', component: ContactsComponent},
+  {path: 'login', component: LoginComponent},
+  
 ];
 
 @NgModule({

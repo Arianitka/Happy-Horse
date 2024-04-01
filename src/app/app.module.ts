@@ -17,6 +17,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { BookingComponent } from './booking/booking.component';
 import { BookingModule } from './booking/booking.module';
 import { ContactsModule } from './contacts/contacts.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { ContactsModule } from './contacts/contacts.module';
     BookingModule,
     ContactsModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    
     
   ],
   providers: [
