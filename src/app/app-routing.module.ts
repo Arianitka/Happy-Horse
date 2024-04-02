@@ -6,6 +6,8 @@ import { BookingComponent } from './booking/booking.component';
 import { EventsComponent } from './events/events.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { CommentsComponent } from './comments/comments.component';
 
 const routes: Routes = [
   
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'events', component: EventsComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'login', component: LoginComponent},
+  {path:'register', component: RegisterComponent},
+  {path: 'comments', component: CommentsComponent}
   
 ];
 

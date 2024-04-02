@@ -18,10 +18,17 @@ import { BookingComponent } from './booking/booking.component';
 import { BookingModule } from './booking/booking.module';
 import { ContactsModule } from './contacts/contacts.module';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    CommentsComponent
+
     
   ],
   imports: [
