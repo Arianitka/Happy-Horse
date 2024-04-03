@@ -25,6 +25,8 @@ import { MyRouterLinkDirectiveDirective } from './my-router-link.directive.direc
 import { MaxCountDirective } from './max-count.directive';
 import { CaretakeComponent } from './caretake/caretake.component';
 import { BookingTableComponent } from './booking-table/booking-table.component';
+import { HistoryComponent } from './history/history.component';
+import { MoreEventsComponent } from './more-events/more-events.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { BookingTableComponent } from './booking-table/booking-table.component';
     MyRouterLinkDirectiveDirective,
     MaxCountDirective,
     CaretakeComponent,
-    BookingTableComponent
+    BookingTableComponent,
+    HistoryComponent,
+    MoreEventsComponent
 
     
   ],

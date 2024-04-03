@@ -10,6 +10,8 @@ import { RegisterComponent } from './register/register.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CaretakeComponent } from './caretake/caretake.component';
 import { BookingTableComponent } from './booking-table/booking-table.component';
+import { HistoryComponent } from './history/history.component';
+import { MoreEventsComponent } from './more-events/more-events.component';
 
 const routes: Routes = [
   
@@ -24,6 +26,8 @@ const routes: Routes = [
   {path: 'comments', component: CommentsComponent},
   {path: 'caretake', component: CaretakeComponent},
   {path: 'booking-table', component: BookingTableComponent},
+  {path: 'history', component: HistoryComponent},
+  {path: 'more-events', component: MoreEventsComponent},
   
 ];
 
