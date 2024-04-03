@@ -1,4 +1,4 @@
-.login-form {
+.form-group {
     width: 40%;
     margin: 2em auto 0;
     text-align: center;
@@ -7,14 +7,16 @@
     background-color: black
 }
 
-.login-form h1 {
+ h1 {
     padding-top: 0;
     border-bottom: none;
     padding-bottom: 0;
     padding-top: 1.5rem;
+    color:white;
+    font-weight: bold;
 }
 
-.login input {
+.form-group {
     flex: 0 1 100%;
     border: 1px solid;
     padding: 0.3em;
@@ -22,16 +24,18 @@
     border-top-right-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
 }
-.login button, .register button {
+    button {
     color: coral;
     border: none;
     border-radius: 0.3em;
     padding: 0.6em 1.2em;
     margin-top: 1.5rem;
-    width: 60%;
+    margin-left: 550px;
+    margin-right: 100px;
+    width: 10%;
     outline: none;
 }
-.login i {
+.form-group i {
     border: 1px solid;
     border-right: none;
     padding: 0.55em;
@@ -40,16 +44,8 @@
     background-color: black;
 }
 
-.login a, .register a {
-    color: #007bff;
-}
 
-.login a:hover {
-    cursor: hand;
-}
-
-
-.login .field{
+.form-group .field{
     display: flex;
     padding-bottom: 0;
 }
