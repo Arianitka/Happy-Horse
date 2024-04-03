@@ -7,13 +7,20 @@ import { NgForm } from '@angular/forms';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+ 
   
   formSubmitHandler(form: NgForm) {
-
-    console.log(form);
-
+    
     const {email, password} = form?.value;
-    form.reset()
+    form.setValue({email: '', password: '' });
+
+    if  (!form){
+      return;
+    }
+
+    if (form.invalid) {
+      console.log("Form is invalid");
+    }
   }
 
 }

@@ -22,6 +22,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CommentsComponent } from './comments/comments.component';
 import { MyRouterLinkDirectiveDirective } from './my-router-link.directive.directive';
+import { MaxCountDirective } from './max-count.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MyRouterLinkDirectiveDirective } from './my-router-link.directive.direc
     LoginComponent,
     RegisterComponent,
     CommentsComponent,
-    MyRouterLinkDirectiveDirective
+    MyRouterLinkDirectiveDirective,
+    MaxCountDirective
 
     
   ],
