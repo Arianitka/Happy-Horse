@@ -1,0 +1,26 @@
+<h1>Booking Hours</h1>
+<body>
+    <div routerLink="/booking">Return to horses</div>
+    <div class="container">
+        <h2>Available Booking Hours</h2>
+
+        <form id="bookingForm">
+            <ul class="time-slots">
+                <li class="time-slot">
+                    <input type="radio" id="slot1" name="timeslot" value="09:00">
+                    <label for="slot1">09:00 - 10:00</label>
+                </li>
+                <li class="time-slot">
+                    <input type="radio" id="slot2" name="timeslot" value="10:00">
+                    <label for="slot2">10:00 - 11:00</label>
+                </li>
+                <li class="time-slot">
+                    <input type="radio" id="slot3" name="timeslot" value="11:00">
+                    <label for="slot3">11:00 - 12:00</label>
+                </li>
+            
+            </ul>
+
+            <button type="submit">Book Selected Time</button>
+        </form>
+    </div>

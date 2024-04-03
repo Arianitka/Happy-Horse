@@ -8,6 +8,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CommentsComponent } from './comments/comments.component';
+import { CaretakeComponent } from './caretake/caretake.component';
+import { BookingTableComponent } from './booking-table/booking-table.component';
 
 const routes: Routes = [
   
@@ -19,7 +21,9 @@ const routes: Routes = [
   {path: 'contacts', component: ContactsComponent},
   {path: 'login', component: LoginComponent},
   {path:'register', component: RegisterComponent},
-  {path: 'comments', component: CommentsComponent}
+  {path: 'comments', component: CommentsComponent},
+  {path: 'caretake', component: CaretakeComponent},
+  {path: 'booking-table', component: BookingTableComponent},
   
 ];
 
