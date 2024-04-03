@@ -1,33 +1,34 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  registerForm = this.fb.group({email: ['', [Validators.required, Validators.email]],
-   password: ['', [Validators.maxLength(7)]],
+  registerForm = this.fb.group({
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [Validators.required, Validators.maxLength(7)]]
   });
-passwordInput: any;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private router: Router) {}
 
-  handleSubmit():void {
-    console.log(this.registerForm.value)
-
-    const {email, password} = this.registerForm?.value;
-    this.registerForm.setValue({email: '', password: '' });
-
-    if  (!this.registerForm){
+  handleSubmit(): void {
+    if (this.registerForm.invalid) {
+      console.log("Form is invalid");
       return;
     }
 
-    if (this.registerForm.invalid) {
-      console.log("Form is invalid");
-    }
-  }
+    console.log("Form submitted successfully");
+    const profileData = {
+      email: this.registerForm.value.email
+    };
 
+    setTimeout(() => {
+      console.log("Profile created:", profileData);
+      this.router.navigate(['/profile'], { state: { profile: profileData } });
+    }, 1000); 
   }
-
+}

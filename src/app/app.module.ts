@@ -28,6 +28,7 @@ import { BookingTableComponent } from './booking-table/booking-table.component';
 import { HistoryComponent } from './history/history.component';
 import { MoreEventsComponent } from './more-events/more-events.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { LogoutComponent } from './logout/logout.component';
     BookingTableComponent,
     HistoryComponent,
     MoreEventsComponent,
+    ProfileComponent,
     
 
     

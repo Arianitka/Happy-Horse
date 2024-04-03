@@ -12,6 +12,7 @@ import { CaretakeComponent } from './caretake/caretake.component';
 import { BookingTableComponent } from './booking-table/booking-table.component';
 import { HistoryComponent } from './history/history.component';
 import { MoreEventsComponent } from './more-events/more-events.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   
@@ -29,6 +30,7 @@ const routes: Routes = [
   {path: 'history', component: HistoryComponent},
   {path: 'more-events', component: MoreEventsComponent},
   {path: 'logout', redirectTo:'/home', pathMatch: 'full'},
+  {path: 'profile', component: ProfileComponent},
   
 ];
 

@@ -21,4 +21,9 @@ export class AuthService {
   logout() {
     this.router.navigate(['login'])
   }
+  getCurrentUser(): any {
+   
+    const userData = localStorage.getItem('currentUser');
+    return userData ? JSON.parse(userData) : null;
+  }
 }
