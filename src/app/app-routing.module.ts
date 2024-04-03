@@ -28,6 +28,7 @@ const routes: Routes = [
   {path: 'booking-table', component: BookingTableComponent},
   {path: 'history', component: HistoryComponent},
   {path: 'more-events', component: MoreEventsComponent},
+  {path: 'logout', redirectTo:'/home', pathMatch: 'full'},
   
 ];
 

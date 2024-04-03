@@ -27,6 +27,7 @@ import { CaretakeComponent } from './caretake/caretake.component';
 import { BookingTableComponent } from './booking-table/booking-table.component';
 import { HistoryComponent } from './history/history.component';
 import { MoreEventsComponent } from './more-events/more-events.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MoreEventsComponent } from './more-events/more-events.component';
     CaretakeComponent,
     BookingTableComponent,
     HistoryComponent,
-    MoreEventsComponent
+    MoreEventsComponent,
+    
 
     
   ],
