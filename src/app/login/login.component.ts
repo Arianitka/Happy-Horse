@@ -11,6 +11,9 @@ export class LoginComponent {
   formSubmitHandler(form: NgForm) {
 
     console.log(form);
+
+    const {email, password} = form?.value;
+    form.reset()
   }
 
 }
