@@ -18,7 +18,7 @@ export class LoginComponent {
 
     const { email, password } = form.value;
 
-    form.resetForm();
+    
 
     if (form.invalid) {
       console.log("Form is invalid");
@@ -26,7 +26,7 @@ export class LoginComponent {
     }
 
     console.log("Logged in successfully with email:", email);
-
+    form.resetForm();
     this.router.navigate(['/profile']);
   }
 }
