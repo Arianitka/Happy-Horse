@@ -21,13 +21,15 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CommentsComponent } from './comments/comments.component';
+import { MyRouterLinkDirectiveDirective } from './my-router-link.directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    CommentsComponent
+    CommentsComponent,
+    MyRouterLinkDirectiveDirective
 
     
   ],
