@@ -1,1 +1,12 @@
-<p>login works!</p>
+<div routerLink="/home">Return home</div>
+<h1>Login</h1>
+
+<form #loginForm="ngForm" (ngSubmit)="formSubmitHandler(loginForm)">
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+    </div>
+
+    <button>Login</button>
+</form>
