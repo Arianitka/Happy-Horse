@@ -32,3 +32,9 @@
 .logout-section {
     margin-top: 20px;
 }
+.btn {
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    
+}
