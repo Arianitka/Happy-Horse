@@ -1,0 +1,34 @@
+.container {
+    background-color: #333; /* Set background color to dark */
+    color: white; /* Set text color to white */
+    padding: 20px;
+}
+
+.profile-heading {
+    color: white; /* Set heading text color to white */
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    color: white; /* Set user details text color to white */
+}
+
+.white-text {
+    color: white; /* Set specific text color to white */
+}
+
+.logout-section {
+    margin-top: 20px;
+}
