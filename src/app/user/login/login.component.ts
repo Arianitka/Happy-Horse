@@ -36,12 +36,6 @@ export class LoginComponent implements OnInit {
     const password = this.loginForm.value.password;
 
     const res = this.authService.login(username, password);
-
-    if (res === 200) {
-      this.router.navigate(['/home']);
-    } else if (res === 403) {
-      this.errorMsg = 'Invalid Credentials';
-    }
   }
 }
 

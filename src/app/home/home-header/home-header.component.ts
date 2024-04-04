@@ -9,6 +9,7 @@ import { AuthService } from '../../services/auth.service';
   styleUrl: './home-header.component.css'
 })
 export class HomeHeaderComponent {
+isAuthenticated: any;
   constructor(private router: Router, private auth: AuthService) { }
 
   // constructor(private userService: UserService, private router: Router) { }

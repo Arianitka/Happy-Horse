@@ -1,3 +1,5 @@
+
+
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -26,6 +28,6 @@ export class LoginComponent {
 
     console.log("Logged in successfully with email:", email);
     form.resetForm();
-    this.router.navigate(['/profile']);
+    this.router.navigate(['/home']);
   }
 }
