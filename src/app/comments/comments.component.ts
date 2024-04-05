@@ -21,9 +21,9 @@ export class CommentsComponent {
       return; // Don't post empty comments
     }
 
-    // Assuming 'user' is the currently logged-in user's username
-    const user = 'JohnDoe'; // Replace with actual username or retrieve from authentication service
 
+    const user = 'JohnDoe';
+    
     // Add the new comment to the comments array
     this.comments.push({
       id: this.nextCommentId++,
@@ -35,13 +35,14 @@ export class CommentsComponent {
     this.newComment = '';
   }
 
-  deleteComment(commentId: number): void {
-    // Find the index of the comment with the specified ID
-    const index = this.comments.findIndex(comment => comment.id === commentId);
-
+  deleteComment(comment: any): void {
+    // Find the index of the comment in the array and remove it
+    const index = this.comments.indexOf(comment);
     if (index !== -1) {
-      // Remove the comment from the array
       this.comments.splice(index, 1);
     }
+  }
+  editComment(comment: any): void {
+    // Implement logic to edit the comment
   }
 }

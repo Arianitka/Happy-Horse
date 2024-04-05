@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comments Section</title>
-</head>
-<body>
+
     <div class="container">
         <h2>Comments Section</h2>
 
-        <!-- Comment Form -->
         <form class="comment-form" (submit)="postComment()">
             <textarea placeholder="Write your comment here..." [(ngModel)]="newComment"></textarea>
             <button type="submit">Post Comment</button>
         </form>
 
-        <!-- Comments -->
         <div class="comments">
             <div *ngFor="let comment of comments" class="comment">
                 <p><strong>{{ comment.user }}:</strong> {{ comment.text }}</p>
@@ -23,5 +14,15 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+
+    <div *ngFor="let comment of comments" class="comment">
+        <p><strong>{{ comment.user }}:</strong> {{ comment.text }}</p>
+        <button (click)="editComment(comment)">Edit</button>
+      </div>
+      <div class="comments">
+        <div *ngFor="let comment of comments" class="comment">
+          <p><strong>{{ comment.user }}:</strong> {{ comment.text }}</p>
+          <button (click)="editComment(comment)">Edit</button>
+          <button (click)="deleteComment(comment)">Delete</button>
+        </div>
+      </div>
