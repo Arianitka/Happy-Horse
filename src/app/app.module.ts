@@ -29,6 +29,7 @@ import { HistoryComponent } from './history/history.component';
 import { MoreEventsComponent } from './more-events/more-events.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AuthGuard } from './profile/profile.guard';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,6 @@ import { ProfileComponent } from './profile/profile.component';
   providers: [
     provideClientHydration()
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AuthGuard]
 })
 export class AppModule { }

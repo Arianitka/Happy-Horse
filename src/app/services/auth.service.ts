@@ -9,9 +9,9 @@ export class AuthService {
   constructor(private router: Router) { }
 
   login(username: string, password: string): boolean {
-    // Assuming your authentication logic here
+    
     if (username === 'suren' && password === '1234') {
-      // Set user details in local storage
+    
       localStorage.setItem('currentUser', JSON.stringify({ username }));
       return true; // Authentication successful
     } else {

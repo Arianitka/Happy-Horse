@@ -13,6 +13,7 @@ import { BookingTableComponent } from './booking-table/booking-table.component';
 import { HistoryComponent } from './history/history.component';
 import { MoreEventsComponent } from './more-events/more-events.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AuthGuard } from './profile/profile.guard';
 
 const routes: Routes = [
   
@@ -31,6 +32,8 @@ const routes: Routes = [
   {path: 'more-events', component: MoreEventsComponent},
   {path: 'logout', redirectTo:'/home', pathMatch: 'full'},
   {path: 'profile', component: ProfileComponent},
+  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
+  { path: '**', redirectTo: '/home' }
   
 ];
 
