@@ -21,14 +21,7 @@ export class RegisterComponent {
       return;
     }
 
-    console.log("Form submitted successfully");
-    const profileData = {
-      email: this.registerForm.value.email
-    };
-
-    setTimeout(() => {
-      console.log("Profile created:", profileData);
-      this.router.navigate(['/profile'], { state: { profile: profileData } });
-    }, 1000); 
+    // Navigate to profile page with query parameters
+    this.router.navigate(['/profile'], { queryParams: { email: this.registerForm.value.email } });
   }
 }

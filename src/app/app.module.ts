@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 // import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
-import { UserModule } from './user/user.module';
+// import { UserModule } from './user/user.module';
 import { GalleryModule } from './gallery/gallery.module';
 import { EventsComponent } from './events/events.component';
 import { EventsModule } from './events/events.module';
@@ -53,7 +53,7 @@ import { AuthGuard } from './profile/profile.guard';
     AppRoutingModule,
     // CoreModule,
     HttpClientModule,
-    UserModule,
+    // UserModule,
     GalleryModule,
     EventsModule,
     HomeModule,
