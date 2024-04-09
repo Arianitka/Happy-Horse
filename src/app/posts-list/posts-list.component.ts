@@ -9,6 +9,8 @@ import { Post } from '../types/post';
 })
 export class PostsListComponent {
   posts: Post[] = [];
+  isLoading: boolean = true;
+  
   constructor (private api : ApiService) {}
   
   ngOnInit(): void {
