@@ -16,28 +16,6 @@ export class PostsListComponent {
       console.log(posts);
       this.posts = posts;
     })
-    
   }
 
 }
-
-// import { Component } from '@angular/core';
-
-// interface Comment {
-//   id: number;
-//   user: string;
-//   text: string;
-// }
-
-// @Component({
-//   selector: 'app-comments',
-//   templateUrl: './comments.component.html',
-//   styleUrls: ['./comments.component.css']
-// })
-// export class CommentsComponent {
-//   newComment: string = '';
-//   comments: Comment[] = []; 
-//   nextCommentId: number = 1; // Initialize a counter for comment IDs
-
- 
-// }
