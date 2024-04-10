@@ -9,12 +9,16 @@ import { MainComponent } from './main/main.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import {HttpClientModule} from '@angular/common/http';
+import { UserModule } from './user/user.module';
+import { AddThemeComponent } from './theme/add-theme/add-theme.component';
+import { ThemeModule } from './theme/theme.module';
 @NgModule({
     declarations: [
       AppComponent,
       MainComponent,
       ThemesListComponent,
       PostsListComponent,
+      AddThemeComponent,
       
     ],
     imports: [
@@ -22,7 +26,9 @@ import {HttpClientModule} from '@angular/common/http';
       AppRoutingModule,
       CoreModule,
       SharedModule,
-      HttpClientModule
+      HttpClientModule,
+      UserModule,
+      ThemeModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -3,14 +3,14 @@ import { ApiService } from '../api.service';
 import { Post } from '../types/post';
 
 @Component({
-  selector: 'app-posts-list',
-  templateUrl: './posts-list.component.html',
-  styleUrl: './posts-list.component.css'
-})
-export class PostsListComponent {
+    selector: 'app-comments',
+    templateUrl: './comments.component.html',
+    styleUrls: ['./comments.component.css']
+  })
+  export class CommentsComponent {
   posts: Post[] = [];
   isLoading: boolean = true;
-  
+
   constructor (private api : ApiService) {}
   
   ngOnInit(): void {

@@ -2,7 +2,7 @@
 
     <!-- homepage -->
 
-    <!-- <div class="container">
+    <div class="container">
         <form class="login" ngForm="form" (ngSubmit)="login()">
             <fieldset>
                 <h2>Login Form</h2>
@@ -16,13 +16,13 @@
                         placeholder="john.doe@gmail.com"
                         ngModel
                         ngModel required email #inputEmail/>
-                </p> -->
-                <!-- <div *ngIf="inputEmail.touched && inputEmail.invalid">
+                </p>
+                    <div *ngIf="inputEmail.touched && inputEmail.invalid">
                     <p class="error" *ngIf="inputEmail.errors?.required">Email is required!</p>
                     <p class="error" *ngIf="inputEmail.errors?.email">Email is not valid!</p>
                 </div>
-     -->
-                <!-- <p class="field field-icon">
+    
+                <p class="field field-icon">
                     <label for="password"><span><i class="fas fa-lock"></i></span></label>
                     <input type="password"
                         name="password"
@@ -30,13 +30,13 @@
                         placeholder="******"
                         ngModel
                         ngModel required minlength="4" #inputPassword/>
-                </p> -->
-                <!-- <div *ngIf="inputPassword.touched && inputPassword.invalid">
+                </p>
+                <div *ngIf="inputPassword.touched && inputPassword.invalid">
                     <p class="error" *ngIf="inputPassword.errors?.required">Password is required!</p>
                     <p class="error" *ngIf="inputPassword.errors?.minlength">Password must be at least 4 characters!</p>
-                </div> -->
+                </div>
     
-                <!-- <button type="submit">Login</button>
+                <button type="submit">Login</button>
             </fieldset>
         </form>
     
@@ -45,8 +45,8 @@
             <a routerLink="/register">Register</a>
         </p>
     </div>
-     -->
-   <!-- <div class="container">
+
+   <div class="container">
     <form class="login" #form="ngForm" (ngSubmit)="login(form)">
         <fieldset>
             <h2>Login Form</h2>
@@ -96,8 +96,6 @@
             </fieldset>
         </form>
     </div>
- -->
-
 
 
 

@@ -1,24 +1,27 @@
-// import { Component, OnInit } from '@angular/core';
-// import { UserService } from '../user.service';
-// import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 // import { AuthService } from '../../services/auth.service';
-// import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
-// @Component({
-//   selector: 'app-login',
-//   templateUrl: './login.component.html',
-//   styleUrls: ['./login.component.css']
-// })
-// export class LoginComponent implements OnInit {
-//   loginForm: FormGroup = new FormGroup({});
-//   errorMsg = "";
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent implements OnInit {
+  loginForm: FormGroup = new FormGroup({});
+  errorMsg = "";
 
-//   constructor(
-//     private userService: UserService,
-//     private authService: AuthService,
-//     private router: Router,
-//     private formBuilder: FormBuilder
-//   ) {}
+  constructor(
+    private userService: UserService,
+    private router: Router,
+    private formBuilder: FormBuilder
+  ) {}
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+}
 
 //   ngOnInit(): void {
 //     this.loginForm = this.formBuilder.group({

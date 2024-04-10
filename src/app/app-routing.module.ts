@@ -5,15 +5,16 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { BookingComponent } from './booking/booking.component';
 import { EventsComponent } from './events/events.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { CommentsComponent } from './comments/comments.component';
 import { CaretakeComponent } from './caretake/caretake.component';
 import { BookingTableComponent } from './booking-table/booking-table.component';
 import { HistoryComponent } from './history/history.component';
 import { MoreEventsComponent } from './more-events/more-events.component';
-import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from './profile/profile.guard';
+import { PostsListComponent } from './posts-list/posts-list.component';
+import { CommentsComponent } from './comments/comments.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
+import { ProfileComponent } from './user/profile/profile.component';
 
 const routes: Routes = [
   
