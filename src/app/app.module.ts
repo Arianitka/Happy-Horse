@@ -5,9 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { MainComponent } from './main/main.component';
+import { MainComponent } from './theme/main/main.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
-import { PostsListComponent } from './posts-list/posts-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UserModule } from './user/user.module';
 import { AddThemeComponent } from './theme/add-theme/add-theme.component';
@@ -17,7 +16,6 @@ import { ThemeModule } from './theme/theme.module';
       AppComponent,
       MainComponent,
       ThemesListComponent,
-      PostsListComponent,
       AddThemeComponent,
       
     ],

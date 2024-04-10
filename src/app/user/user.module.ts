@@ -6,7 +6,7 @@ import { RegisterComponent } from './register/register.component';
 import {UserRoutingModule } from './user-routing.module'
 import { Router, RouterModule } from '@angular/router';
 // import { ListComponent } from './list/list.component';
-import { AuthGuard } from '../profile/profile.guard';
+// import { AuthGuard } from '../profile/profile.guard';
 import { Resolver } from 'dns';
 import { LoginComponent } from './login/login.component';
 
@@ -19,17 +19,7 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     CommonModule,UserRoutingModule, RouterModule.forChild([
-      {
-        path: 'user/list',
-        // component: ListComponent
-      },
-      {
-        path: 'user/detail/:id',
-        resolve: { user: Resolver}
-        // canActivate: [AuthGuard],
-        // component: ProfileComponent
-        
-      }
+     
     ])],
     exports : [
       UserModule,

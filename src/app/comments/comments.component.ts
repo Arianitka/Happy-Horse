@@ -9,7 +9,7 @@ import { Post } from '../types/post';
   })
   export class CommentsComponent {
   posts: Post[] = [];
-  isLoading: boolean = true;
+  // isLoading: boolean = true;
 
   constructor (private api : ApiService) {}
   

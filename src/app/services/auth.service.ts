@@ -1,42 +1,42 @@
-import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Injectable } from '@angular/core';
+// import { Router } from '@angular/router';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class AuthService {
+// @Injectable({
+//   providedIn: 'root'
+// })
+// export class AuthService {
 
-  constructor(private router: Router) { }
+//   constructor(private router: Router) { }
 
-  login(username: string, password: string): boolean {
+//   login(username: string, password: string): boolean {
     
-    if (username === 'suren' && password === '1234') {
+//     if (username === 'suren' && password === '1234') {
     
-      localStorage.setItem('currentUser', JSON.stringify({ username }));
-      return true; // Authentication successful
-    } else {
-      return false; // Authentication failed
-    }
-  }
+//       localStorage.setItem('currentUser', JSON.stringify({ username }));
+//       return true; // Authentication successful
+//     } else {
+//       return false; // Authentication failed
+//     }
+//   }
 
-  logout(): void {
+//   logout(): void {
    
-    localStorage.removeItem('currentUser');
-    this.router.navigate(['login']);
-  }
+//     localStorage.removeItem('currentUser');
+//     this.router.navigate(['login']);
+//   }
 
-  getCurrentUser(): any {
-    const userData = localStorage.getItem('currentUser');
-    return userData ? JSON.parse(userData) : null;
-  }
+//   getCurrentUser(): any {
+//     const userData = localStorage.getItem('currentUser');
+//     return userData ? JSON.parse(userData) : null;
+//   }
 
-  isLoggedIn(): boolean {
+//   isLoggedIn(): boolean {
     
-    const userData = localStorage.getItem('currentUser');
-    return !!userData; 
-}
+//     const userData = localStorage.getItem('currentUser');
+//     return !!userData; 
+// }
 
-}
+// }
 
 
 
